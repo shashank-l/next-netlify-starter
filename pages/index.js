@@ -36,7 +36,7 @@ export default function Home() {
 
     try {
       // Replace YOUR_GOOGLE_APPS_SCRIPT_URL with your actual Google Apps Script URL
-      const apiUrl = `YOUR_GOOGLE_APPS_SCRIPT_URL?q=${encodeURIComponent(question)}`;
+      const apiUrl = `https://script.google.com/macros/s/AKfycbwmnFM366ICRjriXu2jB6ngYCmAVbpGubTE9q6fRtLVMxe4XmYApMSQsULE8FO8oNUU/exec?q=${encodeURIComponent(question)}`;
       const response = await fetch(apiUrl);
       const text = await response.text();
       responseDiv.textContent = text;
