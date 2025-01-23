@@ -6,14 +6,14 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Kaal Gyan with Vishnu Prakash</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Get your slot information" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Enter your phone number: 
         </p>
       </main>
 
