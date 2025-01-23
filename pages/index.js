@@ -35,11 +35,10 @@ export default function Home() {
     responseDiv.textContent = 'Fetching response...';
 
     try {
-      // Replace YOUR_GOOGLE_APPS_SCRIPT_URL with your actual Google Apps Script URL
-      const apiUrl = `https://script.google.com/macros/s/AKfycbwmnFM366ICRjriXu2jB6ngYCmAVbpGubTE9q6fRtLVMxe4XmYApMSQsULE8FO8oNUU/exec?q=${encodeURIComponent(question)}`;
-      const response = await fetch(apiUrl);
-      const text = await response.text();
-      responseDiv.textContent = text;
+      let myMap = new Map();
+      myMap.set("9849805889", "10:00 AM");
+      myMap.set("9010289724", "11:00 AM");
+      responseDiv.textContent = myMap.get(question);
     } catch (error) {
       responseDiv.textContent = 'Error fetching the response. Please try again.';
       console.error('Error:', error);
