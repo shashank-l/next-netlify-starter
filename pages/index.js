@@ -109,7 +109,7 @@ export default function Home() {
       <main>
         <Header title="Get your slot information" />
         <p className="description">
-          <div id="response" style="font-weight: bold;text-decoration: underline;"></div>
+          <div id="response" style={{ fontWeight: 'bold', textDecoration: 'underline', padding: '10px', background: 'lightgreen' }}></div>
         </p>
       </main>
 
