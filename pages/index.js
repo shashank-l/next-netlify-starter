@@ -10,7 +10,6 @@ export default function Home() {
     const inputField = document.createElement('input');
     inputField.type = 'text';
     inputField.id = 'question';
-    inputField.placeholder = 'Type your question here';
     inputField.style = 'margin-top: 10px; padding: 10px; width: 60%; font-size: 16px;';
     
     const submitButton = document.createElement('button');
@@ -28,7 +27,6 @@ export default function Home() {
     const question = questionInput.value.trim();
 
     if (!question) {
-      responseDiv.textContent = 'Please enter your phone number (without spaces and without +91) :';
       return;
     }
 
@@ -104,13 +102,14 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Kaal Gyan with Vishnu Prakash</title>
+        <p>Please enter your phone number (without spaces and without +91)</p>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <Header title="Get your slot information" />
         <p className="description">
-          <div id="response"></div>
+          <div id="response" style="font-weight: bold;text-decoration: underline;"></div>
         </p>
       </main>
 
