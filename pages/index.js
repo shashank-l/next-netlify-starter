@@ -102,7 +102,7 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Kaal Gyan with Vishnu Prakash</title>
-        <p>Please enter your phone number (without spaces and without +91)</p>
+        <title>Please enter your phone number (without spaces and without +91)</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
