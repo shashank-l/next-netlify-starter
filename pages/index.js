@@ -110,7 +110,7 @@ export default function Home() {
       <main>
         <Header title="Get your slot information" />
         <p className="description">
-          <div id="response" style="padding: 10px;font-weight: bold;font-size: 1.2em;background-color: lightgrey;text-decoration: underline;"></div>
+          <div id="response"></div>
         </p>
       </main>
 
