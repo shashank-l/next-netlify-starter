@@ -93,7 +93,7 @@ export default function Home() {
       myMap.set("7093946630","13 - 40");
       myMap.set("8790759908","13 - 45");
       myMap.set("420703631095","13 - 55");
-      responseDiv.textContent = myMap.get(question);
+      responseDiv.textContent = "Your slot is at: " + myMap.get(question);
     } catch (error) {
       responseDiv.textContent = 'Error fetching the response. Please try again.';
       console.error('Error:', error);
@@ -110,7 +110,7 @@ export default function Home() {
       <main>
         <Header title="Get your slot information" />
         <p className="description">
-          Response - <div id="response"></div>
+          <div id="response"></div>
         </p>
       </main>
 
